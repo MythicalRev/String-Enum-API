@@ -13,7 +13,9 @@
 	"description": "Allows custom string enums.",
 	"api": {
 		"include": [
-			"include/*.hpp"
+			"include/*.hpp",
+			"src/*.cpp",
+			"src/*.hpp"
 		]
 	}
 }
