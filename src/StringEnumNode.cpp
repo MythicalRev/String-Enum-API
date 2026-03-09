@@ -22,6 +22,8 @@ void StringEnumNode::optionLeft(CCObject* sender) {
 
     m_selectedOption = m_options[m_currentIndex];
     m_settingLabel->setString(m_selectedOption.c_str());
+    m_settingLabel->setContentWidth(100);
+    m_settingLabel->limitLabelWidth(100, 1.0f, 0.25f);
 }
 
 void StringEnumNode::optionRight(CCObject* sender) {
@@ -33,6 +35,8 @@ void StringEnumNode::optionRight(CCObject* sender) {
     
     m_selectedOption = m_options[m_currentIndex];
     m_settingLabel->setString(m_selectedOption.c_str());
+    m_settingLabel->setContentWidth(100);
+    m_settingLabel->limitLabelWidth(100, 1.0f, 0.25f);
 }
 
 std::string StringEnumNode::getSelectedOption(StringEnumNode* strEnum) {
@@ -48,5 +52,7 @@ void StringEnumNode::setSelectedOption(StringEnumNode* strEnum, int optionIndex)
         strEnum->m_currentIndex = optionIndex;
         strEnum->m_selectedOption = strEnum->m_options[optionIndex];
         strEnum->m_settingLabel->setString(strEnum->m_selectedOption.c_str());
+        strEnum->m_settingLabel->setContentWidth(100);
+        strEnum->m_settingLabel->limitLabelWidth(100, 1.0f, 0.25f);
     }
 }

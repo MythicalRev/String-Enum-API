@@ -15,7 +15,8 @@ protected:
         this->setContentSize({200,40});
 
         m_settingLabel = CCLabelBMFont::create(options[0].c_str(), "bigFont.fnt");
-        m_settingLabel->limitLabelWidth(100, 1.0f, 0.5f);
+        m_settingLabel->setContentWidth(100);
+        m_settingLabel->limitLabelWidth(100, 1.0f, 0.25f);
         this->addChild(m_settingLabel);
         m_settingLabel->updateAnchoredPosition(Anchor::Center);
 
