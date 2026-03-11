@@ -11,11 +11,17 @@
 	"version": "v1.0.0",
 	"developer": "MythicalRev",
 	"description": "Allows custom string enums.",
+	"links": {
+		"source": "https://github.com/MythicalRev/String-Enum-API"
+	},
 	"api": {
 		"include": [
 			"include/*.hpp",
 			"src/*.cpp",
 			"src/*.hpp"
 		]
-	}
+	},
+	"tags": [
+		"developer", "utility", "api"
+	]
 }
