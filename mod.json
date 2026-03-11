@@ -7,7 +7,7 @@
 		"ios": "2.2081"
 	},
 	"id": "mythicalrev.string-enum-api",
-	"name": "String Enum API",
+	"name": "StringEnumAPI",
 	"version": "v1.0.0",
 	"developer": "MythicalRev",
 	"description": "Allows custom string enums.",
